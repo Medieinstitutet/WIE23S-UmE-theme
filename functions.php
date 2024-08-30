@@ -1,17 +1,5 @@
 <?php
-function mt_register_collections_post_type() {
 
-    $args = array(
-        'label'               => 'Collections',
-        'public'              => true,
-        'supports'            => array( 'title', 'editor', 'thumbnail' ),
-        'has_archive'         => true
-    );
-
-    register_post_type( 'collection', $args );
-
-}
-add_action( 'init', 'mt_register_collections_post_type' );
 
 add_action('before_form_on_page_template', function($message_count, $messages) {
     do_action('before_form_on_page_template_reversed', $messages, $message_count);

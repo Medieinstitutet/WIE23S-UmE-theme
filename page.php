@@ -1,7 +1,17 @@
 <?php
-get_header(); ?>
+get_header(); 
+
+$link = 'http://example.com"></a><script>alert("A script");</script><a id="'; //get_post_meta(get_the_ID(), 'authorHomepage', true);
+?>
+
+<a href="<?php echo(esc_attr($link)); ?>">
+	TEstlänk
+</a>
+
         This is a page:
         <?php
+
+
 		if ( have_posts() ) :
 
 			while ( have_posts() ) :

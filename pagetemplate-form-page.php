@@ -19,7 +19,17 @@ get_header(); ?>
 				if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 					if(isset($_POST['message'])) {
-						add_post_meta(get_the_id(), 'secretMessage', $_POST['message']);
+
+						$new_message = $_POST['message'];
+						
+						global $allowedposttags;
+						
+						$allowed_content = array_merge(array(), $allowedposttags);
+						unset($allowed_content['b']);
+
+						$new_message = wp_kses($new_message, $allowed_content);
+						//<b>Bold</b> and <a href="example.com">Länk</a>
+						add_post_meta(get_the_id(), 'secretMessage', $new_message);
 					}
 					
 				}

@@ -16,7 +16,9 @@ if(current_user_can('administrator')) {
 }
 
 get_header(); ?>
-        This is a collection:
+        <div>
+			<a href="<?php echo(home_url("/fardiga-mixar/")); ?>">Färdiga mixar</a>
+		</div>
         <?php
 		if ( have_posts() ) :
 
@@ -42,9 +44,21 @@ get_header(); ?>
 			<?php
 		}
 
-
+		?>
+			<form method="POST">
+				<input type="submit" value="Lägg till i varukorg" />
+			</form>
+		<?php
 
 		if($_SERVER['REQUEST_METHOD'] == 'POST') {
+			
+			$product_ids = get_post_meta(get_the_ID(), 'products', true);
+			foreach($product_ids as $product_id) {
+				WC()->cart->add_to_cart($product_id, 1, 0, array(), array('collection' => get_the_ID() ));
+			}
+		}
+
+		if($_SERVER['REQUEST_METHOD'] == 'POST' && false) { //MEDEBUG: always false
 
 			$action = $_POST['action'];
 			$id = $_POST['id'];

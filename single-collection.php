@@ -28,6 +28,22 @@ get_header(); ?>
 
 		endif;
 
+		$product_ids = get_post_meta(get_the_ID(), 'products', true);
+
+		foreach($product_ids as $product_id) {
+			$product = wc_get_product($product_id);
+
+			?>
+				<div>
+					<a href="<?php echo(get_permalink($product_id)); ?>">
+						<?php echo($product->get_name()) ?>
+					</a>
+				</div>
+			<?php
+		}
+
+
+
 		if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 			$action = $_POST['action'];

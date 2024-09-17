@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-17 08:51+0000\n"
+"PO-Revision-Date: 2024-09-17 09:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: Svenska\n"
+"Language: sv_SE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1\n"
+"X-Domain: mt"
+
+#: functions.php:15
+msgid "Add New"
+msgstr ""
+
+#: functions.php:16
+msgid "Add New Collection"
+msgstr ""
+
+#: functions.php:14
+msgctxt "Add New on Toolbar"
+msgid "Collection"
+msgstr ""
+
+#: functions.php:13
+msgctxt "Admin Menu text"
+msgid "Collections"
+msgstr "Kollektioner"
+
+#: functions.php:20
+msgid "All Collections"
+msgstr ""
+
+#. Author of the theme
+msgid "Anonym"
+msgstr ""
+
+#: functions.php:18
+msgid "Edit Collection"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-form-page.php:2
+msgid "Form page"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-front-page.php:2
+msgid "Front"
+msgstr ""
+
+#. Name of the theme
+msgid "My theme"
+msgstr ""
+
+#: functions.php:17
+msgid "New Collection"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-new-front-page.php:2
+msgid "New front"
+msgstr ""
+
+#: functions.php:24
+msgid "No collections found in Trash."
+msgstr ""
+
+#: functions.php:23
+msgid "No collections found."
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-occasion.php:2
+msgid "Occasion"
+msgstr ""
+
+#: functions.php:25
+msgctxt "Overrides the “Featured Image” phrase"
+msgid "Collection Cover Image"
+msgstr ""
+
+#: functions.php:30
+msgctxt "Overrides the “Insert into post” phrase"
+msgid "Insert into collection"
+msgstr ""
+
+#: functions.php:27
+msgctxt "Overrides the “Remove featured image” phrase"
+msgid "Remove cover image"
+msgstr ""
+
+#: functions.php:26
+msgctxt "Overrides the “Set featured image” phrase"
+msgid "Set cover image"
+msgstr ""
+
+#: functions.php:31
+msgctxt "Overrides the “Uploaded to this post” phrase"
+msgid "Uploaded to this collection"
+msgstr ""
+
+#: functions.php:28
+msgctxt "Overrides the “Use as featured image” phrase"
+msgid "Use as cover image"
+msgstr ""
+
+#: functions.php:22
+msgid "Parent Collection:"
+msgstr ""
+
+#: functions.php:11
+msgctxt "Post type general name"
+msgid "Collections"
+msgstr "Färdiga kollektioner för produkter"
+
+#: functions.php:12
+msgctxt "Post type singular name"
+msgid "Collection"
+msgstr ""
+
+#: functions.php:34
+msgctxt "Screen reader text for item list"
+msgid "Collections list"
+msgstr ""
+
+#: functions.php:33
+msgctxt "Screen reader text for pagination"
+msgid "Collections list navigation"
+msgstr ""
+
+#: functions.php:32
+msgctxt "Screen reader text for the filter link"
+msgid "Filter collections list"
+msgstr ""
+
+#: functions.php:21
+msgid "Search Collections"
+msgstr ""
+
+#: functions.php:29
+msgctxt "The post type archive label"
+msgid "Collection Archives"
+msgstr ""
+
+#: pagetemplate-form-page.php:8
+msgid "This is a form page:"
+msgstr "Detta är ett formulär"
+
+#: functions.php:19
+msgid "View Collection"
+msgstr ""

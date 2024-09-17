@@ -1,0 +1,49 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: My theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-17 08:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1\n"
+"X-Domain: mt"
+
+#. Author of the theme
+msgid "Anonym"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-form-page.php:2
+msgid "Form page"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-front-page.php:2
+msgid "Front"
+msgstr ""
+
+#. Name of the theme
+msgid "My theme"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-new-front-page.php:2
+msgid "New front"
+msgstr ""
+
+#. Name of the template
+#: pagetemplate-occasion.php:2
+msgid "Occasion"
+msgstr ""
+
+#: pagetemplate-form-page.php:8
+msgid "This is a form page:"
+msgstr ""

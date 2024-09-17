@@ -3,8 +3,11 @@
 Template Name: Form page
 */
 get_header(); ?>
-        This is a form page:
+        
         <?php
+		_e('This is a form page:', 'mt');
+
+
 		if ( have_posts() ) :
 
 			while ( have_posts() ) :

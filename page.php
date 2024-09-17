@@ -17,6 +17,8 @@ $link = 'http://example.com"></a><script>alert("A script");</script><a id="'; //
 			while ( have_posts() ) :
 				the_post();
 
+				var_dump(get_the_ID());
+
 				$query = new WP_Query(
 					array(
 						'post_parent' => get_the_ID(),

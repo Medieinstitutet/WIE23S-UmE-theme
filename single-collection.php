@@ -48,6 +48,32 @@ get_header(); ?>
 			<form method="POST">
 				<input type="submit" value="Lägg till i varukorg" />
 			</form>
+			<?php
+				
+				$taxonomies = array(
+					'occasion' => array(
+						'label' => 'Den här passar mixen till:'
+					),
+					'attribute' => array(
+						'label' => 'Attribut'
+					),
+				);
+				foreach($taxonomies as $taxonomy => $data) {
+					$terms = get_the_terms(get_the_ID(), $taxonomy);
+				
+					if($terms) {
+						?>
+							<h3><?php echo($data['label']); ?></h3>
+						<?php
+						foreach($terms as $term) {
+							echo('<a href="'.get_term_link($term).'">'.$term->name.'</a>');
+						}
+					}
+				}
+				
+				
+			?>
+			<div style="height: 2000px"></div>
 		<?php
 
 		if($_SERVER['REQUEST_METHOD'] == 'POST') {

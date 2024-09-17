@@ -11,7 +11,7 @@ while($breadcrumb_term->parent) {
 		var_dump("Too long");
 		break;
 	}
-	$parent = get_term($breadcrumb_term->parent, 'occasion');
+	$parent = get_term($breadcrumb_term->parent, 'product_cat');
 
 	$breadcrumbs[] = $parent;
 
@@ -26,11 +26,11 @@ foreach($breadcrumbs as $breadcrumb_term) {
 echo '<h1>' . esc_html($term->name) . '</h1>';
 
 ?>
-En snacks för varje tillfälle
+Kategorier
 		<?php
 
 $terms = get_terms(array(
-	'taxonomy' => 'occasion',
+	'taxonomy' => 'product_cat',
 	'hide_empty' => false,
 	'parent' => $term->term_id,
 ));

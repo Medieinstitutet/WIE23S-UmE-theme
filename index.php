@@ -1,6 +1,8 @@
 <?php
 get_header(); 
 
+var_dump(get_queried_object());
+
 if (is_tax() || is_category()) {
     // Get the current term
     $term = get_queried_object();

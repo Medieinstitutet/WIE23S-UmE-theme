@@ -2,8 +2,25 @@
 
 function mt_theme_setup() {
     load_theme_textdomain( 'mt', get_template_directory() );
+
+    register_nav_menu( 'topMenu', __( 'Top Menu', 'mt' ) );
+    register_nav_menu( 'frontMenu', __( 'Front Menu', 'mt' ) );
 }
 add_action( 'after_setup_theme', 'mt_theme_setup' );
+
+function mt_enqueue_styles() {
+    // Registrera huvud stylesheet
+
+
+    
+    wp_enqueue_style( 'mt-fonts', 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap' );
+
+    wp_enqueue_style( 'mt-style', get_stylesheet_uri() );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'mt_enqueue_styles' );
+
 
 function mt_register_collections_post_type() {
 
@@ -55,8 +72,10 @@ function mt_output_form() {
 
     $products = wc_get_products(array());
 
+    $url = add_query_arg('created', '1', $_SERVER['REQUEST_URI']);
+
     ?>
-        <form method="POST">
+        <form action="<?php echo($url); ?>" method="POST" onSubmit="dataLayer.push({event: 'createdCollection', products: [].slice.call(document.querySelector('select').selectedOptions).map(function(item) {return item.value}), user: <?php echo(get_current_user_id()) ?>});">
                     <input name="title" />
                     <textarea name="content"></textarea>
 <select name="selectedProducts[]" multiple>

@@ -2,7 +2,13 @@
 /*
 Template Name: Form page
 */
-get_header(); ?>
+get_header(); 
+
+wp_nav_menu( array(
+	'theme_location' => 'topMenu'
+) );
+
+?>
         
         <?php
 		_e('This is a form page:', 'mt');

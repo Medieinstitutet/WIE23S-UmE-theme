@@ -2,3 +2,79 @@
 Theme Name:   My theme
 Text Domain:  mt
 */
+
+html {
+    font-family: "Nunito", system-ui;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #101010;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.centered-site {
+    margin: auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.centered-content {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.menu-line {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+ul.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    gap: 20px;
+}
+
+ul.menu li {
+    margin: 0 0;
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.date-and-author {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 0;
+    color: #666666;
+}
+
+.excerpt {
+    font-size: 24px;
+}
+
+
+.wp-block-woocommerce-cart-order-summary-totals-block {
+    display: none;
+}
+
+.wc-block-components-totals-item__label {
+    font-weight: normal !important;
+}

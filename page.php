@@ -2,6 +2,16 @@
 get_header(); 
 
 ?>
+<div class="menu-line">
+	<div class="centered-site">
+<?php
+wp_nav_menu( array(
+	'theme_location' => 'frontMenu'
+) );
+?>
+</div>
+</div>
+<div class="centered-site">
         <?php
 
 
@@ -9,8 +19,6 @@ get_header();
 
 			while ( have_posts() ) :
 				the_post();
-
-				var_dump(get_the_ID());
 
 				$query = new WP_Query(
 					array(
@@ -35,12 +43,12 @@ get_header();
 				wp_reset_postdata();
 
 
-				the_title();
 				the_content();
 
 			endwhile;
 
 		endif;
 		?>
+</div>
         <?php
 get_footer();
